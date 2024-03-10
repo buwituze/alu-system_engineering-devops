@@ -1,20 +1,6 @@
 #!/usr/bin/env bash
-#Configures a new ubuntu machine by installing
-# Update and upgrade packages
-sudo apt-get update
-sudo apt-get upgrade -y
-
-# Install nginx
-sudo apt-get install nginx -y
-
-# Create a directory called html inside your nginx server
-sudo mkdir -p /var/www/html
-
-# Create a file inside that directory called index.html
-sudo touch /var/www/html/index.html
-
-# Display your message in index.html
+# installs the reverse proxy - Nginx
+sudo apt update && upgrade
+sudo apt install nginx -y 
 echo "Holberton School" | sudo tee /var/www/html/index.html
-
-# Restart nginx
-sudo service nginx restart
+sudo service nginx start
