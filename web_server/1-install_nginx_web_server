@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#Configures a new ubuntu machine by installing
 # Update and upgrade packages
 sudo apt-get update
 sudo apt-get upgrade -y
